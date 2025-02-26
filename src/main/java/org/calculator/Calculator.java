@@ -24,6 +24,7 @@ public class Calculator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        //Reiterate
         while(true) {
             System.out.println("Scientific Calculator:");
             System.out.println("1. Square Root (√x)");
