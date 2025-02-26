@@ -39,10 +39,6 @@ pipeline {
             }
         }
 
-        stage('Attach to Running Container') {
-            steps {
-                sh 'docker attach scientificCalculator'
-            }
-        }
+
     }
 }
