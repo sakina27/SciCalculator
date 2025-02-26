@@ -3,12 +3,13 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "saki2726/scientific-calculator"
+        DOCKER_REGISTRY_URL = "https://index.docker.io/v1/"
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/saki2726/Scientific-Calculator.git'
+                git 'https://github.com/sakina27/SciCalculator.git'
             }
         }
 
@@ -26,7 +27,7 @@ pipeline {
 
         stage('Push Docker Image to Docker Hub') {
             steps {
-                withDockerRegistry([credentialsId: 'DockerHubCred']) {
+                withDockerRegistry([credentialsId: 'DockerHubCred', url: DOCKER_REGISTRY_URL]) {
                     sh 'docker push $DOCKER_IMAGE'
                 }
             }
