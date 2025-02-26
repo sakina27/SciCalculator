@@ -1,13 +1,11 @@
-- name: Deploy Calculator
+---
+- name: Deploy Scientific Calculator
   hosts: localhost
   tasks:
-    - name: Pull Docker image
-      shell: docker pull saki2726/scientific-calculator
+    - name: Pull Docker Image
+      docker_image:
+        name: "saki2726/scientific-calculator"
+        source: pull
 
-    - name: Remove existing container (if running)
-      shell: docker rm -f scientificCalculator
-      ignore_errors: yes
-
-    - name: Run Docker container in detached mode
-      shell: docker run -d --name scientificCalculator saki2726/scientific-calculator
-
+    - name: Run Docker Container
+      shell: docker run -it -d --name calculator saki2726/scientific-calculator
