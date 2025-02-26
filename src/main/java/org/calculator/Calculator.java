@@ -59,7 +59,7 @@ public class Calculator {
                     System.out.println("Result: " + power(base, exp));
                     break;
                 case 5:
-                    System.out.print("Exiting... ");
+                    System.out.print("Exiting...\n");
                     scanner.close();
                     return;
                 default:
