@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/sakina27/SciCalculator.git'
+                git branch: 'main', url: 'https://github.com/sakina27/SciCalculator.git'
             }
         }
 
