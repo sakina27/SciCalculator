@@ -1,6 +1,7 @@
 ---
 - name: Deploy Scientific Calculator
   hosts: jenkins_servers
+  become: yes
   tasks:
     - name: Pull Docker Image
       docker_image:

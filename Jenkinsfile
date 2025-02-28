@@ -40,9 +40,9 @@ pipeline {
         }
 
         stage('Deploy Using Ansible') {
-             steps {
-                 sh 'ansible-playbook -i inventory.ini deploy.yml'
-             }
+            steps {
+                sh 'ansible-playbook -i inventory.ini deploy.yml --become'
+            }
         }
 
 
