@@ -1,8 +1,13 @@
 ---
 - name: Deploy Scientific Calculator
-  hosts: jenkins_servers
-  become: yes
+  hosts: localhost
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   tasks:
+    - name: Disable SSH host key checking
+      set_fact:
+       ansible_ssh_common_args: "-o StrictHostKeyChecking=no"
+
     - name: Pull Docker Image
       docker_image:
         name: "saki2726/scientific-calculator"
