@@ -44,7 +44,7 @@ public class Calculator {
                     System.out.print("Enter number: ");
                     double x = scanner.nextDouble();
                     System.out.println("Result: " + squareRoot(x));
-                    System.out.println("===========================================================")
+                    System.out.println("===========================================================");
                     break;
                 case 2:
                     System.out.print("Enter integer: ");
