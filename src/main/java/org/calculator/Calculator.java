@@ -25,6 +25,7 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //Reiterate
+        //loop
         while(true) {
             System.out.println(" Press Enter to Start");
             scanner.nextLine();
