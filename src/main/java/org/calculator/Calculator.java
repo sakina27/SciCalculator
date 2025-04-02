@@ -44,16 +44,19 @@ public class Calculator {
                     System.out.print("Enter number: ");
                     double x = scanner.nextDouble();
                     System.out.println("Result: " + squareRoot(x));
+                    System.out.println("===========================================================")
                     break;
                 case 2:
                     System.out.print("Enter integer: ");
                     int n = scanner.nextInt();
                     System.out.println("Result: " + factorial(n));
+                    System.out.println("===========================================================");
                     break;
                 case 3:
                     System.out.print("Enter number: ");
                     double y = scanner.nextDouble();
                     System.out.println("Result: " + naturalLog(y));
+                    System.out.println("===========================================================");
                     break;
                 case 4:
                     System.out.print("Enter base: ");
@@ -61,6 +64,7 @@ public class Calculator {
                     System.out.print("Enter exponent: ");
                     double exp = scanner.nextDouble();
                     System.out.println("Result: " + power(base, exp));
+                    System.out.println("===========================================================");
                     break;
                 case 5:
                     System.out.print("Exiting...\n");
