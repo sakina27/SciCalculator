@@ -11,7 +11,7 @@ public class Calculator {
         }
         return Math.sqrt(x);
     }
-
+    //Trying ngrok
     public static long factorial(int x) {
         if (x < 0) {
             System.out.println("Error: Factorial is only defined for non-negative integers.");
