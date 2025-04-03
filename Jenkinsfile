@@ -50,14 +50,14 @@ pipeline {
     post {
             success {
 
-                    mail to: 'Sakina.Baranwala@iiitb.ac.in',
+                    mail to: 'sakinabaranwala123@gmail.com',
                     subject: 'Build Successful: $JOB_NAME - $BUILD_NUMBER',
                     body: "The build was successful.\n\nCheck the build details at: $BUILD_URL"
 
             }
             failure {
 
-                    mail to: 'Sakina.Baranwala@iiitb.ac.in',
+                    mail to: 'sakinabaranwala123@gmail.com',
                     subject: 'Build Failed: $JOB_NAME - $BUILD_NUMBER',
                     body: "The build failed.\n\nCheck the build details at: $BUILD_URL"
 
